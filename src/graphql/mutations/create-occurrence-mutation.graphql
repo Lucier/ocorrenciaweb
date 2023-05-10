@@ -1,0 +1,29 @@
+mutation CreateOccurrence(
+  $student: String!, 
+  $school: String!, 
+  $classroom: String!, 
+  $sex: String!, 
+  $age: String!, 
+  $registration: String!, 
+  $date: String!, 
+  $description: String!) {
+  createOccurrence(data: { 
+    student: $student, 
+    school: $school, 
+    classroom: $classroom,
+    sex: $sex, 
+    age: $age, 
+    registration: $registration, 
+    date: $date, 
+    description: $description }) 
+  {
+    student,
+    school,
+    classroom,
+    sex,
+    age,
+    registration,
+    date,
+    description
+  }
+}

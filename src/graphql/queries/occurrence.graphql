@@ -1,0 +1,13 @@
+query Occurrence($id: String!) {
+  occurrence(id: $id) {
+    id
+    student
+    school
+    classroom
+    sex
+    age
+    registration
+    date
+    description
+  }
+}

@@ -1,0 +1,13 @@
+query Occurrences {
+  occurrences {
+    id
+    student
+    school
+    classroom
+    sex
+    age
+    registration
+    date
+    description
+  }
+}
